@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+{% load static  %}
+
+
 <html dir="ltr" lang="en">
 
 <head>
@@ -9,20 +13,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static  'images/favicon.png' %}">
     <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="../../assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-    <link href="../../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="../../dist/css/style.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <link href="{% static  'libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
+    <link href="{% static  'extra-libs/c3/c3.min.css" rel="stylesheet' %}">
+    <link href="{% static  'extra-libs/jvector/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet" >
+     <link href="{% static 'dist/css/style.min.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -58,17 +55,17 @@
                             <b class="logo-icon">
                                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                                 <!-- Dark Logo icon -->
-                                <img src="../../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                <img src="{% static  'images/logo-icon.png' %}" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo icon -->
-                                <img src="../../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                                <img src="{% static  'images/logo-light-icon.png' %}" alt="homepage" class="light-logo" />
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="../../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                <img src="{% static  'images/logo-text.png' %}" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo text -->
-                                <img src="../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                <img src="{% static  'images/logo-light-text.png' %}" class="light-logo" alt="homepage" />
                             </span>
                         </a>
                         <a class="sidebartoggler d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
@@ -147,7 +144,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="user-img">
-                                                    <img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle">
+                                                    <img src="{% static  'images/users/1.jpg' %}" alt="user" class="rounded-circle">
                                                     <span class="profile-status online pull-right"></span>
                                                 </span>
                                                 <div class="mail-contnet">
@@ -159,7 +156,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="user-img">
-                                                    <img src="../../assets/images/users/2.jpg" alt="user" class="rounded-circle">
+                                                    <img src="{% static  'images/users/2.jpg' %}" alt="user" class="rounded-circle">
                                                     <span class="profile-status busy pull-right"></span>
                                                 </span>
                                                 <div class="mail-contnet">
@@ -171,7 +168,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="user-img">
-                                                    <img src="../../assets/images/users/3.jpg" alt="user" class="rounded-circle">
+                                                    <img src="{% static  'images/users/3.jpg' %}" alt="user" class="rounded-circle">
                                                     <span class="profile-status away pull-right"></span>
                                                 </span>
                                                 <div class="mail-contnet">
@@ -183,7 +180,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="user-img">
-                                                    <img src="../../assets/images/users/4.jpg" alt="user" class="rounded-circle">
+                                                    <img src="{% static  'images/users/4.jpg' %}" alt="user" class="rounded-circle">
                                                     <span class="profile-status offline pull-right"></span>
                                                 </span>
                                                 <div class="mail-contnet">
@@ -290,7 +287,7 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../../assets/images/users/2.jpg" alt="user" class="rounded-circle" width="40">
+                                <img src="{% static  'images/users/2.jpg' %}" alt="user" class="rounded-circle" width="40">
                                 <span class="m-l-5 font-medium d-none d-sm-inline-block">Jonathan Doe <i class="mdi mdi-chevron-down"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -299,7 +296,7 @@
                                 </span>
                                 <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
                                     <div class="">
-                                        <img src="../../assets/images/users/2.jpg" alt="user" class="rounded-circle" width="60">
+                                        <img src="{% static  'images/users/2.jpg' %}" alt="user" class="rounded-circle" width="60">
                                     </div>
                                     <div class="m-l-10">
                                         <h4 class="m-b-0">Jonathan Doe</h4>
@@ -1992,7 +1989,7 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row m-t-0">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/1.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="{% static  'images/users/1.jpg' %}" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
                                         <h6 class="font-medium">James Anderson</h6>
@@ -2017,7 +2014,7 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/4.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="{% static  'images/users/4.jpg' %}" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text active w-100">
                                         <h6 class="font-medium">Michael Jorden</h6>
@@ -2042,7 +2039,7 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/5.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="{% static  'images/users/5.jpg' %}" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
                                         <h6 class="font-medium">Johnathan Doeting</h6>
@@ -2067,7 +2064,7 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row m-t-0">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/2.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="{% static  'images/users/2.jpg' %}" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
                                         <h6 class="font-medium">Steve Jobs</h6>
@@ -2340,7 +2337,7 @@
                             <div class="message-center chat-scroll">
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_1' data-user-id='1'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/1.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status online pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2352,7 +2349,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_2' data-user-id='2'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/2.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/2.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status busy pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2364,7 +2361,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_3' data-user-id='3'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/3.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/3.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status away pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2376,7 +2373,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_4' data-user-id='4'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/4.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/4.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status offline pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2389,7 +2386,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_5' data-user-id='5'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/5.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/5.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status offline pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2402,7 +2399,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_6' data-user-id='6'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/6.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/6.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status offline pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2415,7 +2412,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_7' data-user-id='7'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/7.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/7.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status offline pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2428,7 +2425,7 @@
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_8' data-user-id='8'>
                                     <span class="user-img">
-                                        <img src="../../assets/images/users/8.jpg" alt="user" class="rounded-circle">
+                                        <img src="{% static  'images/users/8.jpg' %}" alt="user" class="rounded-circle">
                                         <span class="profile-status offline pull-right"></span>
                                     </span>
                                     <div class="mail-contnet">
@@ -2469,7 +2466,7 @@
                         </div>
                         <div class="sl-item">
                             <div class="sl-left">
-                                <img class="rounded-circle" alt="user" src="../../assets/images/users/2.jpg"> </div>
+                                <img class="rounded-circle" alt="user" src="{% static  'images/users/2.jpg' %}"> </div>
                             <div class="sl-right">
                                 <div class="font-medium">Go to the Doctor
                                     <span class="sl-date">5 minutes ago</span>
@@ -2479,7 +2476,7 @@
                         </div>
                         <div class="sl-item">
                             <div class="sl-left">
-                                <img class="rounded-circle" alt="user" src="../../assets/images/users/1.jpg"> </div>
+                                <img class="rounded-circle" alt="user" src="{% static  'images/users/1.jpg' %}"> </div>
                             <div class="sl-right">
                                 <div>
                                     <a href="javascript:void(0)">Stephen</a>
@@ -2510,7 +2507,7 @@
                         </div>
                         <div class="sl-item">
                             <div class="sl-left">
-                                <img class="rounded-circle" alt="user" src="../../assets/images/users/4.jpg"> </div>
+                                <img class="rounded-circle" alt="user" src="{% static  'images/users/4.jpg' %}"> </div>
                             <div class="sl-right">
                                 <div class="font-medium">Go to the Doctor
                                     <span class="sl-date">5 minutes ago</span>
@@ -2520,7 +2517,7 @@
                         </div>
                         <div class="sl-item">
                             <div class="sl-left">
-                                <img class="rounded-circle" alt="user" src="../../assets/images/users/6.jpg"> </div>
+                                <img class="rounded-circle" alt="user" src="{% static  'images/users/6.jpg' %}"> </div>
                             <div class="sl-right">
                                 <div>
                                     <a href="javascript:void(0)">Stephen</a>
@@ -2539,33 +2536,30 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="{% static  'libs/jquery/dist/jquery.min.js' %}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{% static  'libs/popper.js/dist/umd/popper.min.js' %}"></script>
+    <script src="{% static  'libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
     <!-- apps -->
-    <script src="../../dist/js/app.min.js"></script>
-    <script src="../../dist/js/app.init.dark.js"></script>
-    <script src="../../dist/js/app-style-switcher.js"></script>
+    <script src="{% static 'dist/js/app.min.js' %}"></script>
+    <script src="{% static 'dist/js/app.init.dark.js' %}"></script>
+    <script src="{% static 'dist/js/app-style-switcher.js' %}"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="{% static  'libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js' %}"></script>
+    <script src="{% static  'extra-libs/sparkline/sparkline.js' %}"></script>
     <!--Wave Effects -->
-    <script src="../../dist/js/waves.js"></script>
+    <script src="{% static 'dist/js/waves.js' %}"></script>
     <!--Menu sidebar -->
-    <script src="../../dist/js/sidebarmenu.js"></script>
+    <script src="{% static 'dist/js/sidebarmenu.js' %}"></script>
     <!--Custom JavaScript -->
-    <script src="../../dist/js/custom.min.js"></script>
+    <script src="{% static 'dist/js/custom.min.js' %}"></script>
     <!--This page JavaScript -->
     <!--chartis chart-->
-    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="{% static  'libs/chartist/dist/chartist.min.js' %}"></script>
+    <script src="{% static  'libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js' %}"></script>
     <!--c3 charts -->
-    <script src="../../assets/extra-libs/c3/d3.min.js"></script>
-    <script src="../../assets/extra-libs/c3/c3.min.js"></script>
-    <script src="../../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="../../assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+
+    <script src="{% static 'dist/js/pages/dashboards/dashboard1.js' %}"></script>
 </body>
 
 </html>
